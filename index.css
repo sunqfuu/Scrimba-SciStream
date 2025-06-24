@@ -45,7 +45,8 @@ main {
   }
 
   .environment {
-    grid-column: 7 / 10;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
   }
 
   .nasa {
@@ -53,7 +54,8 @@ main {
   }
 
   .physics {
-    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    grid-column: 7 / 10;
   }
 
   .health {
