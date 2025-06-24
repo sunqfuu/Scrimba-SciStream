@@ -5,34 +5,60 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
+body {
+  margin: 1em;
+}
+
 /* =================
     Layout
    ================= */
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1em;
 }
-.technology {
-  grid-column: span 2;
-  grid-row: span 1;
+
+@media (min-width: 500px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+  .technology {
+    grid-column: span 2;
+  }
+  .nasa {
+    grid-row: span 2;
+  }
+  .health {
+    grid-column: span 2;
+  }
 }
-.environment {
-  grid-column: span 1;
-  grid-row: span 1;
-}
-.nasa {
-  grid-column: span 1;
-  grid-row: span 2;
-}
-.physics {
-  grid-column: span 1;
-  grid-row: span 1;
-}
-.health {
-  grid-column: span 2;
-  grid-row: span 1;
+
+@media (min-width: 870px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .technology {
+    grid-column: 1 / 7;
+  }
+
+  .environment {
+    grid-column: 7 / 10;
+  }
+
+  .nasa {
+    grid-column: 10 / -1;
+  }
+
+  .physics {
+    grid-column: 1 / 4;
+  }
+
+  .health {
+    grid-column: 4 / 10;
+  }
 }
 
 /* =================
