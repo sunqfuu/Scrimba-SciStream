@@ -13,53 +13,59 @@ body {
     Layout
    ================= */
 
+.technology {
+  grid-area: t;
+}
+
+.environment {
+  grid-area: e;
+}
+
+.nasa {
+  grid-area: n;
+}
+
+.physics {
+  grid-area: p;
+}
+
+.health {
+  grid-area: h;
+}
+
+/* =================
+    Main 
+   ================= */
+
 main {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 1em;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "t"
+    "e"
+    "n"
+    "p"
+    "h";
 }
 
 @media (min-width: 500px) {
   main {
     grid-template-columns: 1fr 1fr;
-  }
-  .technology {
-    grid-column: span 2;
-  }
-  .nasa {
-    grid-row: span 2;
-  }
-  .health {
-    grid-column: span 2;
+    grid-template-areas:
+      "t"
+      "e e n n"
+      "p p n n"
+      "h";
   }
 }
 
 @media (min-width: 870px) {
   main {
-    display: grid;
     grid-template-columns: repeat(12, 1fr);
-  }
-
-  .technology {
-    grid-column: 1 / 7;
-  }
-
-  .environment {
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-  }
-
-  .nasa {
-    grid-column: 10 / -1;
-  }
-
-  .physics {
-    grid-row: 1 / 2;
-    grid-column: 7 / 10;
-  }
-
-  .health {
-    grid-column: 4 / 10;
+    grid-template-areas:
+      "t t t t t t e e e n n n"
+      "p p p h h h h h h n n n";
   }
 }
 
