@@ -1,12 +1,13 @@
 <h1 align="center">🔬 SciStream – Science Content Streamer</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Project-Type-Scrimba%20Frontend%20Path-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Scrimba-Frontend%20Career%20Path-blueviolet?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Tech-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge" />
   <img src="https://img.shields.io/badge/Style-CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge" />
   <img src="https://img.shields.io/badge/Markup-HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge" />
   <img src="https://img.shields.io/badge/Deployed-GitHub%20Pages-6e5494?logo=github&logoColor=white&style=for-the-badge" />
 </p>
+
 
 <p align="center">
   <img src="https://25.media.tumblr.com/66aa6bbcc0766c6b8b9c94ffc9d1629c/tumblr_mji8cbwQ921r34zhyo1_500.gif" width="400" alt="sci-fi science UI animation" />
