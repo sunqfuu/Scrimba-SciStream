@@ -11,8 +11,28 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1em;
+}
+.technology {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.environment {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.nasa {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.physics {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.health {
+  grid-column: span 2;
+  grid-row: span 1;
 }
 
 /* =================
